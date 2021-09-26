@@ -19,10 +19,16 @@ run GUI.py to play
 
 ## Instructions
 
-Click on a blank box and type a number (1-9) to pencil in. 
+Click on a blank box and type a number (1-9) to pencil in.
+
+<img src="https://github.com/r-kf/sudoku-solver/blob/main/screenshots/pencil_in.png" alt="alt text" width="500" height="500">
 
 Press ENTER to confirm. 
+
+<img src="https://github.com/r-kf/sudoku-solver/blob/main/screenshots/place_value.png" alt="alt text" width="500" height="500">
 
 Use DEL to erase what you pencilled in. 
 
 Press SPACE for the entire solution
+
+<img src="https://github.com/r-kf/sudoku-solver/blob/main/screenshots/solve_board.png" alt="alt text" width="500" height="500">
