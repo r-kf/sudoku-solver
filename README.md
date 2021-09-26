@@ -4,7 +4,9 @@ I just really got into sudoku this summer so here's a GUI sudoku application
 ## Prerequisites
 
 Python 3.8.8
+
 pygame
+
 sudoku-manager https://github.com/Jordan-Kowal/sudoku-manager
 
 ## Functionality
