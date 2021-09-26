@@ -1,4 +1,14 @@
-board = [
+from sudoku_manager import Sudoku
+import random
+
+# generate board
+difficulty = random.randint(1, 5)
+print("SUDOKU: DIFFICULTY: " + str(difficulty))
+boardgenerator = Sudoku.generate_grid(difficulty)
+
+board = [[p if p != None else 0 for p in s] for s in boardgenerator]
+
+""" board = [
     [7, 8, 0, 4, 0, 0, 1, 2, 0],
     [6, 0, 0, 0, 7, 5, 0, 0, 9],
     [0, 0, 0, 6, 0, 1, 0, 7, 8],
@@ -8,7 +18,7 @@ board = [
     [0, 7, 0, 3, 0, 0, 0, 1, 2],
     [1, 2, 0, 0, 0, 7, 4, 0, 0],
     [0, 4, 9, 2, 0, 6, 0, 0, 7]
-]
+] """
 
 def solve(b):
     """

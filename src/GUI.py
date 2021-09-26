@@ -1,12 +1,17 @@
 # GUI.py
 import pygame
 import time
+
+from sudoku_manager import Sudoku
+import random
+
 pygame.font.init()
 
 # GUI inspired by: https://github.com/techwithtim/Sudoku-GUI-Solver
 
 
 class Grid:
+    """     
     board = [
         [7, 8, 0, 4, 0, 0, 1, 2, 0],
         [6, 0, 0, 0, 7, 5, 0, 0, 9],
@@ -18,6 +23,14 @@ class Grid:
         [1, 2, 0, 0, 0, 7, 4, 0, 0],
         [0, 4, 9, 2, 0, 6, 0, 0, 7]
     ]
+     """
+
+     # generate board
+    difficulty = random.randint(1, 5)
+    print("SUDOKU: DIFFICULTY: " + str(difficulty))
+    boardgenerator = Sudoku.generate_grid(difficulty)
+
+    board = [[p if p != None else 0 for p in s] for s in boardgenerator]
 
     def __init__(self, rows, cols, width, height, win):
         self.rows = rows
